@@ -11,3 +11,16 @@ https://www.inetdoc.net/articles/adressage.ipv4/adressage.ipv4.exercises.html
 ## Fonctionnement
 ![vlsm](https://user-images.githubusercontent.com/83721477/167432812-e9ba60fc-5e8e-44ba-a5ea-f9d36cdd5229.png)
 
+### Calcule du 1er sous-réseau
+1. On choisis le sous-réseau avec le plus d'hôtes (ici User)
+2. On cherche un `2^x` supérieur à 100 (ici 2^7)<br> `2^7 = 128 - 2(réseau et broadcast) = 126 adresses ip`
+3. On soustrait à 32 bits les 7 bits pour trouver la notation CIDR (le nouveau masque)<br> `32-7 = /25`
+4. On a donc `192.168.0.0/25`<br> On effectue la méthode du `nombre magique` pour trouver la plage d'adresse<br>On aura `192.168.0.127` en dernière adresse.
+
+### Calcule du 2ème sous-réseau
+1. On choisis le 2ème sous-réseau avec le plus d'hôtes (ici Compta)
+2. On cherche un `2^x` supérieur à 50 (ici 2^6)<br> `2^6 = 64 - 2(réseau et broadcast) = 62 adresses ip`
+3. On soustrait à 32 bits les 6 bits pour trouver la notation CIDR (le nouveau masque)<br> `32-6 = /26`
+4. On oublie pas de prendre la prochaine adresse après le 1er sous réseau (ici 192.168.0.128)
+5. On a donc `192.168.0.128/26`<br> On effectue la méthode du `nombre magique` pour trouver la plage d'adresse<br>On aura `192.168.0.191` en dernière adresse.
+
