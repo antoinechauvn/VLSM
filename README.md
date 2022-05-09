@@ -37,3 +37,5 @@ https://www.inetdoc.net/articles/adressage.ipv4/adressage.ipv4.exercises.html
 3. On soustrait à 32 bits les 4 bits pour trouver la notation CIDR (le nouveau masque)<br> `32-4 = /28`
 4. On oublie pas de prendre la prochaine adresse après le 3ème sous réseau (ici 192.168.0.224)
 5. On a donc `192.168.0.224/28`<br> On effectue la méthode du `nombre magique` pour trouver la plage d'adresse<br>On aura `192.168.0.239` en dernière adresse.
+
+![vlsm](https://user-images.githubusercontent.com/83721477/167438577-572eaae7-e7f9-4dbb-9a66-dc7bf006deaf.png)
