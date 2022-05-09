@@ -9,7 +9,7 @@ de CIDR. La différence est que le CIDR est plus utilisé au niveau internet et 
 un réseau local, mais les deux permettent de minimiser la perte d’adresses.
 ```
 
-*Note: Pour mettre en place un réseau aux masques à longueurs variables, il faut être sûr que les routeurs supportent les protocoles compatibles au VLSM.Quelques-uns de ces protocoles sont OSPF, EIGRP, RIPv2, IS-IS*
+*Note: Pour mettre en place un réseau aux masques à longueurs variables, il faut être sûr que les routeurs supportent les protocoles compatibles au VLSM.<br>Quelques-uns de ces protocoles sont OSPF, EIGRP, RIPv2, IS-IS*
 
 https://www.inetdoc.net/articles/adressage.ipv4/adressage.ipv4.exercises.html
 
