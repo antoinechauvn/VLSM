@@ -24,3 +24,16 @@ https://www.inetdoc.net/articles/adressage.ipv4/adressage.ipv4.exercises.html
 4. On oublie pas de prendre la prochaine adresse après le 1er sous réseau (ici 192.168.0.128)
 5. On a donc `192.168.0.128/26`<br> On effectue la méthode du `nombre magique` pour trouver la plage d'adresse<br>On aura `192.168.0.191` en dernière adresse.
 
+### Calcule du 3ème sous-réseau
+1. On choisis le 3ème sous-réseau avec le plus d'hôtes (ici Finance)
+2. On cherche un `2^x` supérieur à 16 (ici 2^5)<br> `2^5 = 32 - 2(réseau et broadcast) = 30 adresses ip`
+3. On soustrait à 32 bits les 5 bits pour trouver la notation CIDR (le nouveau masque)<br> `32-5 = /27`
+4. On oublie pas de prendre la prochaine adresse après le 2ème sous réseau (ici 192.168.0.192)
+5. On a donc `192.168.0.192/27`<br> On effectue la méthode du `nombre magique` pour trouver la plage d'adresse<br>On aura `192.168.0.223` en dernière adresse.
+
+### Calcule du 4ème sous-réseau
+1. On choisis le 4ème sous-réseau avec le plus d'hôtes (ici IT)
+2. On cherche un `2^x` supérieur à 12 (ici 2^4)<br> `2^4 = 16 - 2(réseau et broadcast) = 14 adresses ip`
+3. On soustrait à 32 bits les 4 bits pour trouver la notation CIDR (le nouveau masque)<br> `32-4 = /28`
+4. On oublie pas de prendre la prochaine adresse après le 3ème sous réseau (ici 192.168.0.224)
+5. On a donc `192.168.0.224/28`<br> On effectue la méthode du `nombre magique` pour trouver la plage d'adresse<br>On aura `192.168.0.239` en dernière adresse.
