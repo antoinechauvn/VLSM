@@ -7,3 +7,7 @@ VLSM, pour Variable Length Subnet Mask (soit masque de sous-réseaux à longueur
 *Note: Pour mettre en place un réseau aux masques à longueurs variables, il faut être sûr que les routeurs supportent les protocoles compatibles au VLSM.Quelques-uns de ces protocoles sont OSPF, EIGRP, RIPv2, IS-IS*
 
 https://www.inetdoc.net/articles/adressage.ipv4/adressage.ipv4.exercises.html
+
+## Fonctionnement
+![vlsm](https://user-images.githubusercontent.com/83721477/167432812-e9ba60fc-5e8e-44ba-a5ea-f9d36cdd5229.png)
+
